@@ -1,0 +1,12 @@
+{
+  "name": "piano-sheet-music-pwa",
+  "version": "1.0.0",
+  "description": "Phone-friendly PWA for piano sheet music - chord progressions and full accompaniment",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "firebase-admin": "^13.0.0"
+  }
+}
