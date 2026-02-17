@@ -8,16 +8,17 @@ export function renderABC(elementId, abcNotation, options = {}) {
 
   const defaults = {
     responsive: 'resize',
-    staffwidth: 800,
+    staffwidth: 500,
+    scale: 1.3,
     wrap: {
-      minSpacing: 1.5,
-      maxSpacing: 2.7,
-      preferredMeasuresPerLine: 4
+      minSpacing: 1.8,
+      maxSpacing: 3.0,
+      preferredMeasuresPerLine: 3
     },
-    paddingtop: 10,
-    paddingbottom: 20,
-    paddingleft: 10,
-    paddingright: 10
+    paddingtop: 15,
+    paddingbottom: 25,
+    paddingleft: 15,
+    paddingright: 15
   };
 
   const renderOptions = { ...defaults, ...options };

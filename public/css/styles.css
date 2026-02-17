@@ -278,6 +278,18 @@ body {
 .sheet-music-container svg {
   width: 100%;
   height: auto;
+  min-height: 200px;
+}
+
+/* Make abcjs notation more readable */
+.sheet-music-container svg text {
+  font-weight: 700 !important;
+}
+
+.sheet-music-container svg path,
+.sheet-music-container svg line,
+.sheet-music-container svg rect {
+  stroke-width: 1.2px;
 }
 
 .section-tabs {
