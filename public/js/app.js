@@ -4,7 +4,6 @@ import { renderABC, validateABC, clearRender } from './renderer.js';
 import { initFirebase, storage } from './storage.js';
 
 // ===== Firebase Config =====
-// Replace these with your actual Firebase project values
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyDz2OdZtz0VEFpLyCS5i9NmnXHlmaLG8tY",
   authDomain: "sheet-music-9c1e9.firebaseapp.com",
