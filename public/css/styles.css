@@ -267,9 +267,9 @@ body {
 
 /* ===== Sheet Music Display ===== */
 .sheet-music-container {
-  background: white;
+  background: #fffef5;
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 20px 12px;
   overflow-x: auto;
   touch-action: pan-x pan-y pinch-zoom;
   -webkit-overflow-scrolling: touch;
@@ -281,15 +281,26 @@ body {
   min-height: 200px;
 }
 
-/* Make abcjs notation more readable */
-.sheet-music-container svg text {
-  font-weight: 700 !important;
+/* Force abcjs SVG elements to be dark and readable */
+.sheet-music-container svg * {
+  fill: #000 !important;
+  stroke: #000 !important;
 }
 
-.sheet-music-container svg path,
-.sheet-music-container svg line,
-.sheet-music-container svg rect {
-  stroke-width: 1.2px;
+/* Keep white fills for notehead interiors that need it */
+.sheet-music-container svg [fill="none"] {
+  fill: none !important;
+}
+
+/* Make staff lines and bar lines thicker */
+.sheet-music-container svg path {
+  stroke-width: 1px;
+}
+
+/* Chord symbols and text larger */
+.sheet-music-container svg text {
+  font-size: 110%;
+  font-weight: bold !important;
 }
 
 .section-tabs {

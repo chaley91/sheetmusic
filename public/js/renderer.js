@@ -8,12 +8,12 @@ export function renderABC(elementId, abcNotation, options = {}) {
 
   const defaults = {
     responsive: 'resize',
-    staffwidth: 500,
-    scale: 1.3,
+    staffwidth: 400,
+    scale: 1.5,
     wrap: {
-      minSpacing: 1.8,
-      maxSpacing: 3.0,
-      preferredMeasuresPerLine: 3
+      minSpacing: 2.0,
+      maxSpacing: 3.5,
+      preferredMeasuresPerLine: 2
     },
     paddingtop: 15,
     paddingbottom: 25,
